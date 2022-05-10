@@ -1,0 +1,12 @@
+<jellyProtocol>
+    <reference>/mnt/md0/subclover/meraculous_gapfill.fasta</reference>  
+    <outputDir>/mnt/md0/subclover/PBJelly/</outputDir>
+    <cluster>
+        <command notes="For single node, multi-core machines" >${CMD} ${JOBNAME} 2> ${STDERR} 1> ${STDOUT} &amp;</command>
+        <nJobs>14</nJobs>
+    </cluster>
+    <blasr>-minMatch 8 -minPctIdentity 70 -bestn 1 -nCandidates 20 -maxScore -500 -nproc 16 -noSplitSubreads</blasr>
+    <input baseDir="/mnt/md0/subclover/PBReads/">
+        <job>pacbioReads.fasta</job>
+    </input>
+</jellyProtocol>
