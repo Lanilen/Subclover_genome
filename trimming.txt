@@ -1,0 +1,8 @@
+For Single End Files:
+skewer -m head -Q 20 -q 30 -l 54 -n yes
+
+For Pair End Files:
+skewer -m pe -Q 20 -q 30 -l 54 -n
+
+For Mate Pair Reads:
+skewer -m mp -Q 20 -q 30 -i -l 54 -n -u
