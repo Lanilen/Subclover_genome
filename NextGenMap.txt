@@ -1,0 +1,3 @@
+Parameters for mate pair evaluation:
+ngm-core -q [LIBRARY] -n 1 --strata 1 -i 0.95 -R 54
+
